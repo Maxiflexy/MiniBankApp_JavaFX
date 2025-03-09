@@ -1,0 +1,105 @@
+.root {
+    -fx-background-color: #f5f5f5;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.panel {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #e0e0e0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 5);
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+.text-field {
+    -fx-background-color: #f9f9f9;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 4;
+    -fx-padding: 8;
+    -fx-font-size: 14px;
+}
+
+.text-field:focused {
+    -fx-border-color: #4a90e2;
+    -fx-background-color: white;
+}
+
+.button {
+    -fx-background-radius: 4;
+    -fx-font-size: 14px;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+}
+
+.action-button {
+    -fx-background-color: #4a90e2;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-min-width: 150;
+}
+
+.action-button:hover {
+    -fx-background-color: #3a80d2;
+}
+
+.deposit-button {
+    -fx-background-color: #42b883;
+    -fx-text-fill: white;
+    -fx-min-width: 120;
+}
+
+.deposit-button:hover {
+    -fx-background-color: #32a873;
+}
+
+.withdraw-button {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+    -fx-min-width: 120;
+}
+
+.withdraw-button:hover {
+    -fx-background-color: #d73c2c;
+}
+
+.display-button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-min-width: 200;
+}
+
+.display-button:hover {
+    -fx-background-color: #2488cb;
+}
+
+.exit-button {
+    -fx-background-color: #7f8c8d;
+    -fx-text-fill: white;
+}
+
+.exit-button:hover {
+    -fx-background-color: #6f7c7d;
+}
+
+.balance-label {
+    -fx-background-color: #f8f9fa;
+    -fx-padding: 10;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #e0e0e0;
+    -fx-text-fill: #2c3e50;
+}
+
+.transaction-history {
+    -fx-font-family: 'Consolas', 'Monaco', monospace;
+    -fx-font-size: 13px;
+}
+
+.separator {
+    -fx-background-color: #e0e0e0;
+}
