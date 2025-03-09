@@ -81,7 +81,7 @@ public class AccountCreationController {
     private void navigateToBankingOperations(BankAccount account) {
         try {
             // Load the banking operations FXML
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/maxiflexy/minibankapp/banking_operations.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/maxiflexy/minibankapp/view/banking_operations.fxml"));
             Parent root = loader.load();
 
             // Get the controller and initialize it with the account
@@ -93,7 +93,7 @@ public class AccountCreationController {
 
             // Create and set the new scene
             Scene scene = new Scene(root);
-            scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/com/maxiflexy/minibankapp/banking-style.css")).toExternalForm());
+            scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/com/maxiflexy/minibankapp/css/banking-style.css")).toExternalForm());
 
             stage.setScene(scene);
             stage.show();
