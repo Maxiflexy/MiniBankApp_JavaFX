@@ -100,6 +100,15 @@
     -fx-font-size: 13px;
 }
 
+.error-label {
+    -fx-font-weight: bold;
+    -fx-background-color: #ffeaea;
+    -fx-background-radius: 4;
+    -fx-padding: 8;
+    -fx-border-color: #ffcdd2;
+    -fx-border-radius: 4;
+}
+
 .separator {
     -fx-background-color: #e0e0e0;
 }

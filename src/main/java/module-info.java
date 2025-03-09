@@ -4,5 +4,6 @@ module com.maxiflexy.minibankapp {
 
 
     opens com.maxiflexy.minibankapp to javafx.fxml;
+    opens com.maxiflexy.minibankapp.controller to javafx.fxml;
     exports com.maxiflexy.minibankapp;
 }

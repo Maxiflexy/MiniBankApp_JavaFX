@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="500.0" prefWidth="600.0" spacing="15.0" styleClass="panel"
+      xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.maxiflexy.minibankapp.controller.AccountCreationController">
+    <children>
+        <Label text="WELCOME TO DREAM-DEVs BANKING APPLICATION" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+            <VBox.margin>
+                <Insets top="20.0" />
+            </VBox.margin>
+        </Label>
+        <Separator prefWidth="400.0" />
+        <Label text="Enter account holder name:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="nameField" maxWidth="300.0" promptText="e.g. John Doe">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <Label text="Enter initial deposit amount:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="initialDepositField" maxWidth="300.0" promptText="e.g. 1000.00">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <Button fx:id="createAccountButton" mnemonicParsing="false" onAction="#createAccount"
+                styleClass="action-button" text="Create Account">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </Button>
+        <Label fx:id="errorLabel" styleClass="error-label" textFill="#e74c3c" visible="false" wrapText="true">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+    </children>
+    <padding>
+        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+    </padding>
+</VBox>
